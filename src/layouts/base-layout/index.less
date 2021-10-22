@@ -1,0 +1,29 @@
+.layoutWrap {
+  height: 100%;
+  .sideBar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    :global {
+      .ant-layout-sider-children {
+        flex: 1;
+        overflow: auto;
+      }
+      .ant-layout-sider-trigger {
+        flex-shrink: 0;
+      }
+    }
+  }
+  :global {
+    .ant-layout-content {
+      padding: 20px;
+      overflow: auto;
+    }
+  }
+  .record {
+    padding: 20px 0 0;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+  }
+}

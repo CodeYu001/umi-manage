@@ -1,0 +1,44 @@
+@import "./_library.less";
+
+html,
+body,
+#root {
+  min-width: 1100px;
+  height: 100%;
+}
+
+#root {
+  height: 100vh;
+}
+
+// 单行文本溢出
+.overflow-ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wrapContent {
+  min-height: 100%;
+  padding: 16px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+// 横向滚动条样式
+.scrollBarStyleRow {
+  .scrollBarStyle(1px, 10px);
+}
+
+// 纵向滚动条样式
+.scrollBarStyleColumn {
+  .scrollBarStyle(10px, 1px);
+}
+
+//@todo modal样式问题
+.ant-modal-close-x {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
